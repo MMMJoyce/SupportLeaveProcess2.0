@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOP: VLR Intake for Support</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .tab-active {
+            border-bottom-color: #FF6334;
+            color: #FF6334;
+            font-weight: 600;
+        }
+        .tab-inactive {
+            border-bottom-color: transparent;
+            color: #025863;
+        }
+        .prose code {
+            background-color: #D1EBEF;
+            color: #025863;
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-6 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-dark-teal" style="color: #025863;">SOP: VLR Intake for Support</h1>
+            <p class="text-lg text-gray-600 mt-2">Streamlining the Leave & Attendance Variance Request Process for Support Staff</p>
+        </header>
+
+        <div id="sop-tabs">
+            <div class="border-b border-gray-200">
+                <nav class="-mb-px flex space-x-6" aria-label="Tabs">
+                    <button onclick="changeTab('user')" id="user-tab" class="py-4 px-1 border-b-2 text-lg font-medium tab-active">
+                        User SOP
+                    </button>
+                    <button onclick="changeTab('tech')" id="tech-tab" class="py-4 px-1 border-b-2 text-lg font-medium tab-inactive">
+                        Technical Deep Dive
+                    </button>
+                </nav>
+            </div>
+
+            <div id="user-content" class="py-8 prose max-w-none">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="md:col-span-2">
+                        <h2 class="text-2xl font-semibold text-dark-teal" style="color: #025863;">Your 4-Step Guide to Requesting Leave</h2>
+                        <p>This guide walks you through the simple process of submitting a leave or attendance variance request. Our new system uses Jotform to make it faster and easier for you.</p>
+                        
+                        <div class="space-y-6 mt-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-teal-100" style="background-color: #D1EBEF;">
+                                    <span class="text-xl font-bold" style="color: #008BA3;">1</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-semibold" style="color: #025863;">Access the Leave Form</h3>
+                                    <p class="text-gray-600">Start by clicking the standard VA Leave link you've always used. The system will automatically identify you as a Support team member.</p>
+                                </div>
+                            </div>
+                             <div class="flex items-start">
+                                <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-teal-100" style="background-color: #D1EBEF;">
+                                    <span class="text-xl font-bold" style="color: #008BA3;">2</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-semibold" style="color: #025863;">Get Redirected to Your Smart Form</h3>
+                                    <p class="text-gray-600">You will be automatically sent to the new "MMM Support Leave and Attendance Variance Request Form" on Jotform. Just enter your MMM Email and click "Verify".</p>
+                                </div>
+                            </div>
+                             <div class="flex items-start">
+                                <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full" style="background-color: #D1EBEF;">
+                                    <span class="text-xl font-bold" style="color: #008BA3;">3</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-semibold" style="color: #025863;">Complete the Pre-filled Form</h3>
+                                    <p class="text-gray-600">Your form will be pre-filled with your current leave balances and personal data from Salesforce. All you need to do is:</p>
+                                    <ul class="list-disc list-inside mt-2 text-gray-600">
+                                        <li>Choose your leave type (Vacation, Sick, etc.).</li>
+                                        <li>Select if you're taking full days, a half-day, or specific hours.</li>
+                                        <li>Your remaining balance will update automatically as you fill out the form.</li>
+                                        <li>Attach any required documents (e.g., doctor's note, task delegation form).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full" style="background-color: #D1EBEF;">
+                                    <span class="text-xl font-bold" style="color: #008BA3;">4</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-semibold" style="color: #025863;">Submit for Approval</h3>
+                                    <p class="text-gray-600">Once all required fields are complete, the "Submit" button will appear. Click it, and your request will be automatically routed to the correct approver (e.g., your manager for short leaves, department head for longer ones).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-1 space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-500" style="border-color: #FF6334;">
+                            <h3 class="text-xl font-semibold" style="color: #025863;">Your Cue to Act</h3>
+                            <p class="mt-2 text-gray-700">Your only task is to initiate and complete the Jotform. The system handles all routing, calculations, and notifications automatically.</p>
+                            <ul class="mt-3 list-disc list-inside text-gray-600">
+                                <li><strong>Start:</strong> Access the leave link.</li>
+                                <li><strong>Action:</strong> Verify email and fill in request details.</li>
+                                <li><strong>Submit:</strong> Hit the submit button once it's active.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4" style="border-color: #00AFC0;">
+                            <h3 class="text-xl font-semibold" style="color: #025863;">Playbook for Common Scenarios</h3>
+                             <div class="mt-4">
+                                <h4 class="font-semibold text-gray-800">What if I have insufficient leave credits?</h4>
+                                <p class="text-gray-600 text-sm">The form will show a clear "insufficient credits" message, and the submit button will be disabled. You cannot submit a request for more time than you have available.</p>
+                            </div>
+                            <div class="mt-4">
+                                <h4 class="font-semibold text-gray-800">What if I see an error message?</h4>
+                                <p class="text-gray-600 text-sm">Helpful error messages will guide you. For example, if your email or ID is invalid, you won't be able to proceed. Double-check your entries and follow any on-screen instructions.</p>
+                            </div>
+                             <div class="mt-4">
+                                <h4 class="font-semibold text-gray-800">What happens after I submit?</h4>
+                                <p class="text-gray-600 text-sm">Your request is sent for approval automatically. You will receive email notifications about the status of your request.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tech-content" class="hidden py-8 prose max-w-none">
+                <p>This section details the technical implementation of the VLR Intake process, from the initial user redirect to the backend Salesforce automation.</p>
+                
+                <div class="bg-white p-4 rounded-lg shadow-sm mt-4">
+                    <h3 class="text-xl font-semibold" style="color: #025863;">Step 1: Initial User Routing & Redirection</h3>
+                    <p>The process begins when a user accesses the Visualforce page for leave requests. An Apex controller determines if the user is a standard VA or a Support team member.</p>
+                    <ul class="list-disc list-inside mt-2">
+                        <li><strong>Component:</strong> Visualforce Page with controller <code>VALeaveController</code>.</li>
+                        <li><strong>Logic:</strong> The <code>handleSubmit</code> method validates the user's Contact record. It checks the value of the <code>VA_Type__c</code> field.</li>
+                        <li><strong>Outcome for Support:</strong> If <code>VA_Type__c</code> is 'Support', the controller returns the URL for the Jotform, redirecting the user.</li>
+                        <li><strong>Outcome for VAs:</strong> If the user is not 'Support', they proceed with the standard VA leave process.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg shadow-sm mt-4">
+                    <h3 class="text-xl font-semibold" style="color: #025863;">Step 2: Jotform Prefill & Salesforce Integration</h3>
+                    <p>The Jotform is configured with Salesforce Dynamic Prefill to automatically populate fields based on the user's verified email.</p>
+                    <ul class="list-disc list-inside mt-2">
+                        <li><strong>Platform:</strong> Jotform</li>
+                        <li><strong>Feature:</strong> Salesforce Dynamic Prefill</li>
+                        <li><strong>Lookup Object:</strong> <code>VA Leave</code></li>
+                        <li><strong>Prefill Logic:</strong> The form finds the most recent <code>VA Leave</code> record where the <code>Mapped Mover</code> matches the user's Mover ID and the <code>Mapped FY</code> matches the current Fiscal Year.</li>
+                    </ul>
+                    <h4 class="mt-4 font-semibold">Prefill Field Mappings:</h4>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white border mt-2">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="py-2 px-4 border-b text-left">VA Leave Field (Source)</th>
+                                    <th class="py-2 px-4 border-b text-left">Jotform Field (Target)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="py-2 px-4 border-b"><code>Mapped VA Name</code></td><td class="py-2 px-4 border-b"><code>Support Name</code></td></tr>
+                                <tr><td class="py-2 px-4 border-b"><code>VA Type</code></td><td class="py-2 px-4 border-b"><code>Type of Service</code></td></tr>
+                                <tr><td class="py-2 px-4 border-b"><code>Mapped VA Status</code></td><td class="py-2 px-4 border-b"><code>Status</code></td></tr>
+                                <tr><td class="py-2 px-4 border-b"><code>Record ID</code></td><td class="py-2 px-4 border-b"><code>VA Leave ID</code></td></tr>
+                                <tr><td class="py-2 px-4 border-b"><code>Remaining Paid Time Off</code></td><td class="py-2 px-4 border-b"><code>Available Personal PTO</code></td></tr>
+                                <tr><td class="py-2 px-4 border-b"><code>Remaining Sick Leaves</code></td><td class="py-2 px-4 border-b"><code>Available Sick PTO</code></td></tr>
+                                <tr><td class="py-2 px-4 border-b"><code>VA Email</code></td><td class="py-2 px-4 border-b"><code>Support Email Address</code></td></tr>
+                                <tr><td class="py-2 px-4 border-b"><code>Remaining Offset Hours</code></td><td class="py-2 px-4 border-b"><code>Remaining Allowable Skeleton Workforce</code></td></tr>
+                            </tbody>
+                        </table>
+                        <p class="text-sm text-gray-600 mt-1">A more extensive list of mappings can be found in the source document.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-sm mt-4">
+                    <h3 class="text-xl font-semibold" style="color: #025863;">Step 3: Backend Automation (Flows, Triggers, Classes)</h3>
+                    <p>Upon submission, Jotform integrates with Salesforce to create records, triggering a cascade of automation to process the request.</p>
+
+                    <h4 class="mt-4 font-semibold text-lg" style="color: #008BA3;">Jotform to Salesforce Record Creation</h4>
+                    <p>Jotform creates a <code>VA Leave Request</code> record in Salesforce, mapping form fields to Salesforce fields.</p>
+                    <ul class="list-disc list-inside">
+                        <li><strong>Primary Object:</strong> <code>VA Leave Request</code></li>
+                        <li><strong>Record Matching:</strong> Finds existing <code>Contact</code> and <code>VA Leave</code> records to link the new request.</li>
+                        <li><strong>Field Mapping Example:</strong> Jotform's <code>Leave Start Date</code> is mapped to <code>VA Leave Request.Leave_Start_Date__c</code>.</li>
+                    </ul>
+
+                    <h4 class="mt-6 font-semibold text-lg" style="color: #008BA3;">Record-Triggered & Scheduled Flows</h4>
+                    <div class="space-y-4 mt-2">
+                         <div class="p-3 border rounded-md"><strong>VLR_SubmitSupportLeave:</strong> Creates a <code>VA Leave</code> record from a submitted <code>Case</code> (Record Type: Support Leave Request).</div>
+                         <div class="p-3 border rounded-md"><strong>VALR_Leave_Request_Form_Submitted_EA:</strong> On <code>VA Leave Request</code> submission, sends an email alert to the approval queue and creates a history record.</div>
+                         <div class="p-3 border rounded-md"><strong>VA_leave_request_history:</strong> Creates an audit trail (<code>VA Request History</code> record) whenever the <code>Status</code> of a <code>VA Leave Request</code> changes.</div>
+                         <div class="p-3 border rounded-md"><strong>VA_Leave_Credits_Upon_Confirmation:</strong> Allocates leave credits when a <code>Contact</code>'s <code>Confirmation Date</code> is today.</div>
+                         <div class="p-3 border rounded-md"><strong>Support_PTO_Monthly_and_Yearly_Accrual:</strong> A scheduled flow that accrues PTO monthly and annually for eligible contacts.</div>
+                         <div class="p-3 border rounded-md"><strong>Other Flows:</strong> The system includes additional flows for data cleanup (<code>VLRAnniv Cleanup</code>), balance updates (<code>Update_VA_Leaves</code>), fiscal year rollovers (<code>Support_leave_Fiscal_Year_FU</code>), and temporary PTO snapshots (<code>Copy_Remaining_PTO...</code>).</div>
+                    </div>
+                    
+                    <h4 class="mt-6 font-semibold text-lg" style="color: #008BA3;">Apex Triggers</h4>
+                     <div class="space-y-4 mt-2">
+                        <div class="p-3 border rounded-md"><strong>ContactTriggers.trigger:</strong> On <code>Contact</code> (before/after insert/update), assigns approvers via <code>ApproverAssignmentService</code> and recalculates SWF capping by calling <code>VALeaveCappingHandler</code> for Support VAs.</div>
+                        <div class="p-3 border rounded-md"><strong>VALeaveTrigger.trigger:</strong> On <code>VA_Leave__c</code> (after insert/update), calls <code>VALeaveCappingHandler.applySWFCapping</code> when a leave becomes associated with a 'Placed' 'Support' VA.</div>
+                        <div class="p-3 border rounded-md"><strong>LeaveRequestTrigger.trigger:</strong> On <code>VA_Leave_Request__c</code> (after insert/update), calls <code>VLR_LeaveApprovalEngine.handleLeaveSubmission</code> when <code>Status</code> changes to 'Submitted'.</div>
+                        <div class="p-3 border rounded-md"><strong>ApprovalResponseTrigger.trigger:</strong> On <code>Approval_Response__c</code> (after insert), calls <code>VLR_LeaveApprovalEngine.handleApprovalUpdate</code> to re-evaluate the parent leave request.</div>
+                    </div>
+
+                    <h4 class="mt-6 font-semibold text-lg" style="color: #008BA3;">Key Apex Classes & Scheduled Jobs</h4>
+                     <div class="space-y-4 mt-2">
+                        <div class="p-3 border rounded-md"><strong>VALeaveCappingHandler:</strong> Applies Skeleton Workforce (SWF) capping logic. Invoked by triggers, it calculates and bulk updates the <code>SWF_Capping__c</code> field on <code>VA Leave</code> records.</div>
+                        <div class="p-3 border rounded-md"><strong>VLR_LeaveApprovalEngine:</strong> The core approval workflow orchestrator. It routes requests, detects bypass conditions, and calls other services for routing and email notifications. Invoked by triggers.</div>
+                        <div class="p-3 border rounded-md"><strong>VLR_ApprovalRouter:</strong> Contains stage-specific routing logic (e.g., <code>routeToMainAlt</code>, <code>routeToHRThenMain...</code>), updating stages and sending emails via <code>VLR_EmailService</code>.</div>
+                        <div class="p-3 border rounded-md"><strong>VLR_EmailService:</strong> Formats and sends all transactional emails (confirmations, reminders, notifications) for the process.</div>
+                        <div class="p-3 border rounded-md"><strong>VLR_PublicApprovalController:</strong> Backend controller for the public Visualforce page used by approvers clicking links in emails.</div>
+                        <div class="p-3 border rounded-md"><strong>Scheduled Jobs:</strong> The system uses nightly scheduled jobs for auto-reminders (<code>VLR_AutoReminderScheduler</code>), auto-rejections (<code>VLR_AutoRejectScheduler</code>), and data cleanup/resets (<code>VLRAnnivCleanup</code>, <code>UpdateFiscalYearStatusJob</code>).</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeTab(tabName) {
+            const userTab = document.getElementById('user-tab');
+            const techTab = document.getElementById('tech-tab');
+            const userContent = document.getElementById('user-content');
+            const techContent = document.getElementById('tech-content');
+
+            if (tabName === 'user') {
+                userTab.classList.remove('tab-inactive');
+                userTab.classList.add('tab-active');
+                techTab.classList.remove('tab-active');
+                techTab.classList.add('tab-inactive');
+                userContent.classList.remove('hidden');
+                techContent.classList.add('hidden');
+            } else {
+                techTab.classList.remove('tab-inactive');
+                techTab.classList.add('tab-active');
+                userTab.classList.remove('tab-active');
+                userTab.classList.add('tab-inactive');
+                techContent.classList.remove('hidden');
+                userContent.classList.add('hidden');
+            }
+        }
+    </script>
+
+</body>
+</html>
